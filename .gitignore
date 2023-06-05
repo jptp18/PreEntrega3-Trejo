@@ -1,0 +1,38 @@
+# Ignorar archivos de compilación
+*.o
+*.out
+
+# Ignorar archivos de dependencias o paquetes
+node_modules/
+packages/
+
+# Ignorar archivos generados por IDEs
+.vscode/
+.idea/
+
+# Ignorar archivos de compilación de lenguajes específicos
+/build/
+/dist/
+/bin/
+
+# Ignorar archivos de configuración personalizados
+config.ini
+secrets.json
+
+# Ignorar archivos CSS compilados
+*.css
+
+# Ignorar archivos map generados por Sass
+*.map
+
+# Ignorar el directorio de salida de compilación
+dist/
+
+# Ignorar el directorio .sass-cache (si está presente)
+.sass-cache/
+
+# Ignorar cualquier archivo o directorio de respaldo generado automáticamente
+*~
+
+# Ignorar archivos de configuración de entorno local (por ejemplo, .env)
+.env
