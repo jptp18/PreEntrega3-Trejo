@@ -1,0 +1,26 @@
+/*Footer*/
+
+footer{
+    background-color: $footer;
+    padding-bottom: 4rem;
+    color: $verde;
+}
+
+.navegacion-footer{
+    display: flex;
+    flex-direction: column;
+    color: $titulosbody;
+
+    p{
+        font-size: 2rem;
+    }
+}
+
+.logo__footer{
+    color: #1B401D;
+}
+
+.iconos-navegacion{
+    display: flex;
+    gap: 1rem;
+}

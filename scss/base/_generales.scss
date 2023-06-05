@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box; /*Para que le margin padding no afecte el ancho de nuestros elementos*/
+    font-size: 62.5%; /*1 rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit; /*Hereda del elemento padre*/
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2; /*Interlineado*/
+    background-color: $fondo;
+}
+
+/*Globales*/
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin:  0 auto; /*Para centrar el contenido horizontalmente*/
+
+}
+
+a{
+    text-decoration: none;
+    font-family: $fuenteParrafos;
+}
+
+p{
+    font-family: $fuenteParrafos;
+    font-size: 1.8rem;
+}
+h1,h2,h3,h4{
+    line-height: 1.2;
+    font-family: $fuenteHeading;
+    font-weight: 400;
+}
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4rem;
+}
+img{
+    max-width: 100%;
+}
+
+main{
+    background-color: $fondo;
+}
+
+/*Utilidades*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+.titulos-body{
+    color: $titulosbody;
+}

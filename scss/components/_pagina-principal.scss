@@ -1,0 +1,37 @@
+/*Pagina Principal*/
+
+.seccion{
+    padding: 3rem 0;
+    border-bottom: 1px solid $gris;
+    margin-top: 5rem;
+    &:last-of-type{
+        border: none;
+    }
+
+    @media(min-width: 768px){
+        @include grid-pagina-principal(1fr, 2fr);
+    }
+}
+
+.seccion_reversa{
+    @extend .seccion;
+    @media(min-width: 768px){
+        @include grid-pagina-principal(2fr, 1fr);
+    }
+}
+
+.seccion__informacion{
+    h4{
+        margin-top: 0;
+    }
+}
+.seccion-parrafo{
+    margin-top: -4rem;
+}
+
+.seccion__imagen{
+    max-height: 100%;
+    img{
+        margin-top: 3rem;
+    }
+}

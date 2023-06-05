@@ -1,0 +1,71 @@
+/*Heading*/
+.header{
+    background-image: linear-gradient(rgba(34, 34, 34, 0.450), rgba(76, 76, 76, 0.450)),url(../img/anejo3_filtro.png);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: $titulos;
+}
+.header__texto{
+    text-align: center;
+    margin-top: 5rem;
+
+    &:hover{
+        cursor: default;
+    }
+
+    @media(min-width:768px){
+            margin-top: 15rem;
+    }
+}
+
+.barra{
+    padding-top: 4rem;
+
+    @media(min-width:768px){
+            display: flex;
+            justify-content: space-between; /*Alinear horizontalmente*/
+            align-items: center; /*alinear verticalmente*/
+    }
+}
+.logo__nombre{
+    font-weight: 400;
+    color: $titulos;
+    font-family: $fuenteHeading;
+
+    &:hover{
+        color: $titulosbody;
+    }
+}
+
+.logo__bold{
+    font-weight: bold;
+}
+
+@media(min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+        
+    }
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: $titulos;
+
+    &:hover{
+        color: $titulosbody;
+        scale: 1.3;
+        font-weight: bold;
+    }
+}
+
+.active{
+    color: $titulosbody;
+    font-weight: bold;
+    font-size: 2.1rem;
+}

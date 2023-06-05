@@ -1,0 +1,20 @@
+/*Paleta de Colores*/
+$gris: #e1e1e1;
+$blanco: #ffff;
+$negro: #000000;
+$fondo: #f4efec;
+$titulos: #F4E5DC;
+$footer: #F4E5DC;
+$titulosbody: #954817;
+$verde: #018C55;
+
+/*Fuentes*/
+$fuenteHeading: 'Cookie', cursive;
+$fuenteParrafos: 'Didact Gothic', sans-serif;
+
+/*Mixin*/
+@mixin grid-pagina-principal($col1, $col2){
+    display: grid;
+    grid-template-columns: $col1 $col2;
+    column-gap: 2rem;
+}
