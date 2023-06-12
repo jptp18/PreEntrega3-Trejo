@@ -122,6 +122,13 @@ main {
 }
 .logo__nombre:hover {
   color: #954817;
+  transition: 0.5s;
+}
+@media (max-width: 890px) {
+  .logo__nombre {
+    font-size: 5rem;
+    text-align: center;
+  }
 }
 
 .logo__bold {
@@ -144,6 +151,7 @@ main {
   color: #954817;
   scale: 1.3;
   font-weight: bold;
+  transition: 0.2s;
 }
 
 .active {
@@ -161,24 +169,26 @@ main {
 .seccion:last-of-type, .seccion_reversa:last-of-type {
   border: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 1160px) {
   .seccion, .seccion_reversa {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
+    align-items: center;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1160px) {
   .seccion_reversa {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 2rem;
+    align-items: center;
   }
 }
 
 .seccion__informacion h4 {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .seccion-parrafo {
@@ -187,9 +197,27 @@ main {
 
 .seccion__imagen {
   max-height: 100%;
+  text-align: center;
 }
 .seccion__imagen img {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 500px) and (max-width: 1160px) {
+  .seccion__imagen img {
+    width: 380px;
+    height: 380px;
+  }
+}
+.seccion__imagen .last-image {
+  height: 300px;
+}
+@media (min-width: 500px) {
+  .seccion__imagen .last-image {
+    height: auto;
+    width: 100%;
+  }
 }
 
 /*Nosotros*/
@@ -215,7 +243,7 @@ main {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
   .producto {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -224,6 +252,15 @@ main {
 }
 .producto:last-of-type {
   border: none;
+}
+.producto .producto__imagen {
+  max-width: 590px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.producto .producto__imagen img {
+  width: 100%;
+  text-align: center;
 }
 
 .producto__label {
@@ -304,8 +341,10 @@ main {
 }
 
 /*Galeria*/
-.carousel-inner {
-  height: 715px;
+@media (min-width: 1200px) {
+  .carousel-inner {
+    height: 715px;
+  }
 }
 
 /*Historia*/

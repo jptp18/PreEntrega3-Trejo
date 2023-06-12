@@ -11,16 +11,30 @@
     border-bottom: 1px solid $gris;
     margin-bottom: 5rem;
 
-    @media(min-width: 768px){
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            column-gap: 3rem;
+
+    @media(min-width: 1080px){
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 3rem;
     }
 
     &:last-of-type{
         border: none;
     }
+
+    .producto__imagen{
+        max-width: 590px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        
+        img{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
 }
+
 .producto__label{
     font-weight: bold;
 }

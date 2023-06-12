@@ -8,21 +8,23 @@
         border: none;
     }
 
-    @media(min-width: 768px){
+    @media(min-width: 1160px){
         @include grid-pagina-principal(1fr, 2fr);
+        align-items: center;
     }
 }
 
 .seccion_reversa{
     @extend .seccion;
-    @media(min-width: 768px){
+    @media(min-width: 1160px){
         @include grid-pagina-principal(2fr, 1fr);
+        align-items: center;
     }
 }
 
 .seccion__informacion{
     h4{
-        margin-top: 0;
+        margin-top: 1rem;
     }
 }
 .seccion-parrafo{
@@ -31,7 +33,21 @@
 
 .seccion__imagen{
     max-height: 100%;
+    text-align: center;
     img{
-        margin-top: 3rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: auto;
+        @media(min-width: 500px) and (max-width: 1160px){
+            width: 380px;
+            height: 380px;
+        }
+    }
+    .last-image{
+        height: 300px;
+        @media(min-width: 500px){
+            height: auto;
+            width: 100%;
+        }
     }
 }

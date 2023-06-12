@@ -1,5 +1,7 @@
 /*Galeria*/
 
 .carousel-inner{
-    height: 715px;
+    @media(min-width: 1200px){
+        height: 715px;
+    }
 }
