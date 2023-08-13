@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+@import './base/variables';
+@import './base/generales';
+
+
+@import './components/header';
+@import './components/search';
+@import './components/trending-gifs';
+@import './components/footer';
+
+@import './queries';
+@import './darkTheme';

@@ -1,0 +1,5 @@
+Instalar SASS:
+1. npm init => instalar todo el ambiente de node.
+2. Crear carpeta scss y dentro el archivo styles.scss
+3. Instalar globalmente sass => npm install -g sass
+4. Correr sass y que compile: sass --watch scss:css

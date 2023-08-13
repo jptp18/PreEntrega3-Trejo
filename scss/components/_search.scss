@@ -1,0 +1,98 @@
+.search{
+
+    margin-top: 4rem;
+
+    h1{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 1.50rem;
+        text-align: center;
+        line-height: 2rem;
+        color: $main-color;
+        display: block;
+        max-width: 570px;
+        margin: 0 auto;
+
+        em{
+            color: $secondary-color;
+            font-style: normal;
+            
+        }
+
+    }
+
+    .seeker-container{
+        margin-top: 1rem;
+        
+        img{
+            display: block;
+            width: 100%;
+            max-width: 17rem;
+            margin: 0 auto;
+        }
+        
+        .search-bar{
+            height: 57px;
+            width: 80%;
+            max-width: 570px;
+            border: 1px solid $main-color;
+            border-radius: 30px;
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            input{
+                width: 95%;
+                font-family: $main-font;
+                font-size: 1rem;
+                border: none;
+                outline: none;
+                margin-left: 1rem;
+            }
+
+            button{
+                all: unset;
+                cursor: pointer;
+                margin-right: 1rem;
+                height: 23px;
+                width: 20px;
+                font-size: 100%;
+
+                .fa-search{
+                    color: $main-color;
+                }
+            }
+        }
+
+    }
+
+    .trending{
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 400px;
+        font-family: $main-font;
+        color: $main-color;
+        text-align: center;
+
+        h5{
+            text-align: center;
+        }
+
+        .trending_links_container{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: .6rem;
+
+            p{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

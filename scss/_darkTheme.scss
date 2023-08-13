@@ -1,0 +1,26 @@
+.dark{
+    background-color: $dark-back-color;
+    color: $light-color;
+
+    .header{
+        .navBar{
+            .nav_items{
+                .nav-link{
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+    a,p,h1,h2,h3{
+        color: $light-color;
+    }
+
+    .trending-gifs{
+        background-color: $darker-back-color;
+    }
+
+    footer, input{
+        background-color: $dark-back-color;
+    }
+}

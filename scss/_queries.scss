@@ -1,0 +1,104 @@
+/*Header*/
+
+@media (max-width: 890px){
+    .header{
+        
+        padding: 10px;
+
+        .logo-container{
+            margin-left: .5rem;
+        }
+
+        .navBar{
+            justify-content: center;
+            margin-top: 0;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $main-color;
+            text-align: center;
+            transform: translateX(-100%);
+            transition: .3s ease all;
+            z-index: 2;
+
+            .nav_items{
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                
+                align-items: center;
+    
+                li{
+                    margin-top: 1.5rem;
+                    .nav-link{
+                        color: $light-color;
+                    }
+                    .nav-link-img{
+                        display: none;
+                    }
+        
+                }
+                
+        
+            }
+            
+
+        }
+    }
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+        span{
+            width: 30px;
+            height: 4px;
+            background: $main-color;
+            margin-bottom: 4px;
+            border-radius: 2px;
+            transform-origin: 6px .5px;
+            transition: all 0.2s linear;
+        }
+    }
+
+    .open{
+        transform: translateX(0) !important;
+    }
+
+    .close{
+        span{
+            transform: rotate(45deg) translate(0px, 0px);
+        }
+        span:nth-child(2){
+            display: none;
+        }
+        span:nth-child(3){
+            transform: rotate(-45deg) translate(-5px, 1px);
+        }
+
+    }
+
+}
+
+/*Search Section*/
+@media (min-width: 1080px){
+    .search{
+        margin-top: 4rem;
+
+        h1{
+            font-size: 2.2rem;
+        }
+    
+        .seeker-container{
+            img{
+                max-width: 25rem;
+            }
+        }
+    }
+}

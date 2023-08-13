@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script
+      src="https://kit.fontawesome.com/3bc7d78e54.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Cambiando icono del navegador-->
+    <link rel="icon" href="./assets/gif-verse-logo.png">
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>GifVerse</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="./assets/gif-verse-logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="navBar" id="_items">
+            <ul class="nav_items">
+                <li><a class="nav-link" href="#">Inicio</a></li>
+                <li><a class="nav-link" href="#" id="dark-mode">Modo Oscuro</a></li>
+                <li><a class="nav-link" href="#">Favoritos</a></li>
+                <li><a class="nav-link" href="#">Mis GIFS</a></li>
+                <li><a class="nav-link-img" href="#"><img src="./assets/button-crear-gifo.svg" alt="Botón"></a></li>
+            </ul>
+        </nav><!--NavBar-->
+        <div class="nav_toggle" id="_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header> <!--Header-->
+
+    <main class="search">
+        
+
+        <h1 class="search-title">Inspírate, busca, guarda y crea los mejores <em>GIFS</em></h1>
+
+        <div class="seeker-container">
+            
+            <img src="./assets/ilustra_header.svg" alt="Imagen buscador">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar Gifs y más">
+                <button class="btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="trending">
+            <h3>Trending:</h3>
+
+            <div class="trending_links_container">
+
+                <p class="trending_links">Lorem,</p>
+                <p class="trending_links">Lorem,</p>
+                <p class="trending_links">Lorem,</p>
+                <p class="trending_links">Lorem,</p>
+                <p class="trending_links">Lorem</p>
+
+            </div>
+        </div>
+
+
+       
+    </main>
+
+    <section class="trending-gifs">
+        <h2></h2>
+        <p></p>
+        <div></div>
+    </section>
+
+    <footer></footer>
+
+
+
+</body>
+
+<script src="./scripts/navBar.js"></script>
+<script src="./scripts/darkMode.js"></script>
+
+</html>
